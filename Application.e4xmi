@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_GpXL8NoSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ide.application" bindingContexts="_GpXL-doSEeazL9J0PlkbYA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_GpXL8doSEeazL9J0PlkbYA" label="RuleUtil" x="200" y="130" width="700" height="500">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_GpXMENoSEeazL9J0PlkbYA">
+      <children xsi:type="advanced:Perspective" xmi:id="_GpXMEdoSEeazL9J0PlkbYA" elementId="ruleperspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_GpXMEtoSEeazL9J0PlkbYA" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_FHAnYNodEeazL9J0PlkbYA" elementId="rulehighlighter" containerData="" contributionURI="bundleclass://RuleUtil/RuleUtil.parts.RuleSyntaxView" label="Syntax view"/>
+          <children xsi:type="basic:Part" xmi:id="_GpXMFNoSEeazL9J0PlkbYA" toBeRendered="false" visible="false" containerData="" contributionURI="bundleclass://RuleUtil/RuleUtil.parts.RuleView" label="Rule Tree View"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_GpXMCdoSEeazL9J0PlkbYA" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_GpXMCtoSEeazL9J0PlkbYA" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GpXMC9oSEeazL9J0PlkbYA" label="Open" iconURI="platform:/plugin/RuleUtil/icons/sample.png" command="_GpXMANoSEeazL9J0PlkbYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GpXMDNoSEeazL9J0PlkbYA" label="Save" iconURI="platform:/plugin/RuleUtil/icons/save_edit.png" command="_GpXMA9oSEeazL9J0PlkbYA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GpXMDdoSEeazL9J0PlkbYA" label="Quit" command="_GpXL_NoSEeazL9J0PlkbYA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_GpXMDtoSEeazL9J0PlkbYA" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_GpXMD9oSEeazL9J0PlkbYA" label="About"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_GpXMFdoSEeazL9J0PlkbYA">
+      <children xsi:type="menu:ToolBar" xmi:id="_GpXMFtoSEeazL9J0PlkbYA" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_GpXMF9oSEeazL9J0PlkbYA" iconURI="platform:/plugin/RuleUtil/icons/sample.png" command="_GpXMANoSEeazL9J0PlkbYA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_GpXMGNoSEeazL9J0PlkbYA" iconURI="platform:/plugin/RuleUtil/icons/save_edit.png" command="_GpXMA9oSEeazL9J0PlkbYA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_GpXL_doSEeazL9J0PlkbYA" elementId="RuleUtil.handler.quitCommand" contributionURI="bundleclass://RuleUtil/RuleUtil.handlers.QuitHandler" command="_GpXL_NoSEeazL9J0PlkbYA"/>
+  <handlers xmi:id="_GpXMAdoSEeazL9J0PlkbYA" elementId="RuleUtil.handler.openCommand" contributionURI="bundleclass://RuleUtil/RuleUtil.handlers.OpenHandler" command="_GpXMANoSEeazL9J0PlkbYA"/>
+  <handlers xmi:id="_GpXMBNoSEeazL9J0PlkbYA" elementId="RuleUtil.handler.saveCommand" contributionURI="bundleclass://RuleUtil/RuleUtil.handlers.SaveHandler" command="_GpXMA9oSEeazL9J0PlkbYA"/>
+  <bindingTables xmi:id="_GpXL_toSEeazL9J0PlkbYA" bindingContext="_GpXL-doSEeazL9J0PlkbYA">
+    <bindings xmi:id="_GpXL_9oSEeazL9J0PlkbYA" keySequence="M1+Q" command="_GpXL_NoSEeazL9J0PlkbYA"/>
+    <bindings xmi:id="_GpXMAtoSEeazL9J0PlkbYA" keySequence="M1+O" command="_GpXMANoSEeazL9J0PlkbYA"/>
+    <bindings xmi:id="_GpXMBdoSEeazL9J0PlkbYA" keySequence="M1+S" command="_GpXMA9oSEeazL9J0PlkbYA"/>
+    <bindings xmi:id="_GpXMCNoSEeazL9J0PlkbYA" keySequence="M1+A"/>
+  </bindingTables>
+  <rootContext xmi:id="_GpXL-doSEeazL9J0PlkbYA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_GpXL-toSEeazL9J0PlkbYA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_GpXL-9oSEeazL9J0PlkbYA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_GpXL_NoSEeazL9J0PlkbYA" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_GpXMANoSEeazL9J0PlkbYA" elementId="RuleUtil.open" commandName="openCommand"/>
+  <commands xmi:id="_GpXMA9oSEeazL9J0PlkbYA" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <addons xmi:id="_GpXL8toSEeazL9J0PlkbYA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_GpXL89oSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_GpXL9NoSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_GpXL9doSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_GpXL9toSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_GpXL99oSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_GpXL-NoSEeazL9J0PlkbYA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
